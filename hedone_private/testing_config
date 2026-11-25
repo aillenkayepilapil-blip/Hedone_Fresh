@@ -1,0 +1,8 @@
+<?php
+$path = 'C:/xampp/hedone_private/config.php';
+echo file_exists($path) ? "config found<br>" : "config NOT found<br>";
+$c = require $path;
+try {
+  new PDO("mysql:host={$c['db_host']};dbname={$c['db_name']}", $c['db_user'], $c['db_pass']);
+  echo "database login OK";
+} catch (Throwable $e) { echo "database FAILED: " . htmlspecialchars($e->getMessage()); }

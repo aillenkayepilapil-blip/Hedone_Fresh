@@ -19,7 +19,7 @@ window.Hedone = (function () {
       const response = await fetch(url, { method: 'POST', body: formData });
       return await response.json();
     } catch (problem) {
-      return { ok: false, error: 'Cannot reach the server. Open the site at http://localhost/hedone/ (Apache must be running).', network: true };
+      return { ok: false, error: 'Cannot reach the server. Open the site at http://localhost//11-18-Hedone/hedone/ (Apache must be running).', network: true };
     }
   }
 
