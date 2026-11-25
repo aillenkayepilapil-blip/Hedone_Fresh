@@ -1,0 +1,5 @@
+# Typing a .php address in the browser bar shows "Page Not Found" (bootstrap.php also checks this).
+RewriteEngine On
+RewriteCond %{HTTP:Sec-Fetch-Dest} ^document$
+RewriteRule \.php$ - [R=404,L]
+ErrorDocument 404 "Page Not Found"

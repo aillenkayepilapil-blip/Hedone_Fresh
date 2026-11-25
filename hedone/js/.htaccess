@@ -1,0 +1,6 @@
+# Typing a .js address in the browser bar shows "Page Not Found".
+# (A <script> tag still works. See Design Decisions: a JS file cannot truly be hidden.)
+RewriteEngine On
+RewriteCond %{HTTP:Sec-Fetch-Dest} ^document$
+RewriteRule .* - [R=404,L]
+ErrorDocument 404 "Page Not Found"

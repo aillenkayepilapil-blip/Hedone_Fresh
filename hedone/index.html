@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hedone Fresh – Student Grocery Membership</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="page">
+
+  <div class="topwrap">
+<div class="sitename">Hedone Fresh</div>
+<header class="top">
+    <a href="#" class="logo"><i></i>Hedone Fresh</a>
+    <form class="search" role="search" onsubmit="return false">
+      <input type="search" placeholder="Search for product" aria-label="Search for product">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#45292c" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+    </form>
+    <div class="actions">
+      <div class="icons">
+        <span title="Wishlist"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#45292c" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.5A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg></span>
+        <span title="Cart"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#45292c" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M5 8h14l-1 12H6z"/><path d="M9 8a3 3 0 0 1 6 0"/></svg><b class="dot">2</b></span>
+      </div>
+      <nav class="hlinks" id="hdrlinks" aria-label="Account"></nav>
+    </div>
+  </header>
+</div>
+
+  <nav>
+    <a href="#">☰ Browse Categories</a>
+    <div class="mid">
+      <a href="#" data-act="home">Home</a>
+      <a href="#" class="sale">Flash Sale</a>
+      <a href="#">Shop</a>
+      <a href="#">Contact</a>
+    </div>
+    <div class="side"><a href="#">Member Deals</a><a href="#">Get Support</a></div>
+  </nav>
+
+  <p id="welcome" class="welcome" hidden>Welcome, <b></b>! You are logged in. <a id="dashlink" href="dashboard.html" hidden>Open the dashboard</a></p>
+  <section class="hero">
+    <div class="text">
+      <span class="badge">Join the Club. Taste the Savings</span>
+      <h1>Guilt-Free Cravings<br>on a Student Budget.</h1>
+      <p>Join the membership with your student email and unlock member-only prices, tiered rewards, and early access to product drops.</p>
+      <a href="#" class="btn" data-act="register">Join the Club →</a>
+    </div>
+    <div class="hero-image">
+      <img src="images/hero.png" alt="Student shopping bag filled with fresh groceries">
+    </div>
+  </section>
+
+  <section>
+    <div class="head">
+      <h2>Categories</h2>
+      <div class="arrows"><button aria-label="Previous">←</button><button class="on" aria-label="Next">→</button></div>
+    </div>
+    <div class="cats" id="cats">
+      <button class="cat"><span>🥬</span>Vegetable</button>
+      <button class="cat"><span>🍎</span>Fruits</button>
+      <button class="cat active"><span>🥚</span>Egg</button>
+      <button class="cat"><span>🍗</span>Meat</button>
+      <button class="cat"><span>🥛</span>Milk</button>
+      <button class="cat"><span>☕</span>Coffee</button>
+      <button class="cat"><span>🥤</span>Drinks</button>
+    </div>
+  </section>
+
+</div>
+<footer class="foot">© Hedone Fresh All rights reserved</footer>
+<div id="backdrop" hidden></div>
+
+<section class="popup" id="p-login" role="dialog" aria-modal="true" aria-labelledby="t-login" hidden>
+  <h2 id="t-login">Log in</h2>
+  <form id="login" novalidate></form>
+</section>
+
+<section class="popup wide" id="p-register" role="dialog" aria-modal="true" aria-labelledby="t-register" hidden>
+  <h2 id="t-register">Register</h2>
+  <form id="reg" novalidate></form>
+</section>
+
+<section class="popup" id="p-otp" role="dialog" aria-modal="true" aria-labelledby="t-otp" hidden>
+  <h2 id="t-otp">Verify your email</h2>
+  <form id="otp" novalidate></form>
+</section>
+
+<section class="popup" id="p-forgot" role="dialog" aria-modal="true" aria-labelledby="t-forgot" hidden>
+  <h2 id="t-forgot">Forgot Password</h2>
+  <form id="fp1" novalidate></form>
+  <form id="fp2" novalidate hidden></form>
+</section>
+
+<section class="popup" id="p-change" role="dialog" aria-modal="true" aria-labelledby="t-change" hidden>
+  <h2 id="t-change">Change Password</h2>
+  <form id="change" novalidate></form>
+</section>
+
+<script src="js/common.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

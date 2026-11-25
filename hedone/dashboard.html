@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Security Dashboard – Hedone Fresh</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="page">
+  <div class="topwrap">
+    <div class="sitename">Hedone Fresh</div>
+    <header class="top">
+      <a href="index.html" class="logo"><i></i>Hedone Fresh</a>
+      <span class="spacer"></span>
+      <nav class="hlinks" id="hdrlinks" aria-label="Account"></nav>
+    </header>
+  </div>
+
+  <main class="dash">
+    <h1>Security dashboard</h1>
+    <p id="dash-msg" class="hint">Loading…</p>
+
+    <div id="dash" hidden>
+      <section class="cards" id="cards" aria-label="Summary"></section>
+
+      <h2>Failed log-ins per hour (last 24 hours)</h2>
+      <div class="bars" id="bars" role="img" aria-label="Bar chart of failed log-ins per hour"></div>
+
+      <div class="two">
+        <section>
+          <h2>Top 5 IP addresses (failed log-ins)</h2>
+          <div class="scroll"><table class="tbl" id="ips"></table></div>
+        </section>
+        <section>
+          <h2>Flags from the monitoring script</h2>
+          <div class="scroll"><table class="tbl" id="flags"></table></div>
+        </section>
+      </div>
+
+      <h2>Recent events</h2>
+      <form id="filters" class="filters">
+        <label>From <input type="date" id="f-from"></label>
+        <label>To <input type="date" id="f-to"></label>
+        <label>Event <select id="f-type"><option value="">All</option></select></label>
+        <label>Username <input type="text" id="f-user" maxlength="50"></label>
+        <label>IP address <input type="text" id="f-ip" maxlength="45"></label>
+        <button type="submit" class="btn">Apply</button>
+      </form>
+      <div class="scroll"><table class="tbl" id="events"></table></div>
+      <p class="hint" id="refreshed"></p>
+    </div>
+  </main>
+</div>
+<footer class="foot">© Hedone Fresh All rights reserved</footer>
+<script src="js/common.js"></script>
+<script src="js/dashboard.js"></script>
+</body>
+</html>
