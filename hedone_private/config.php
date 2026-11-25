@@ -6,7 +6,7 @@ return [
   'db_user' => 'hedone_app', 'db_pass' => '123',
   'enc_key' => '3En71IZTMIw+c03WUUYLLnmnEheopVCskEEEeM+xOw4=',                              // php -r "echo base64_encode(random_bytes(32));"
   'error_log' => __DIR__ . '/php-errors.log',
-  
+  'base_url' => 'http://localhost/hedone',
   // 'log' = write emails into a text file (for testing). 'smtp' = send real emails (needed for the demo).
   'mail_mode' => 'log',
   'mail_log'  => __DIR__ . '/mail-outbox.log',
