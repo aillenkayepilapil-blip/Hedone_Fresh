@@ -13,4 +13,5 @@ return [
   'smtp_host' => 'smtp.gmail.com', 'smtp_port' => 587,
   'smtp_user' => 'you@gmail.com',  'smtp_pass' => 'CHANGE_ME_APP_PASSWORD',   // Gmail App Password
   'smtp_from' => 'you@gmail.com',
+  
 ];
